@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Recyclegence | JATAYU 3</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+
+  <!-- JavaScript -->
+  <link href="/static/js/bootstrap.js" rel="stylesheet" />
+  <link href="/static/js/jquery-3.4.1.min.js" rel="stylesheet" />
+  <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+  <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+
+  <!-- Icon -->
+  <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+  <link rel="icon" href="/static/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body class="sub_page about_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="">
+            <img src={{ url_for('static', filename='/images/logo.png') }} />
+            <span>
+              Recyclegence
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="https://kampusmerdeka.kemdikbud.go.id/">
+                  <img src={{ url_for('static', filename='/images/kampus (1).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://orbitfutureacademy.id">
+                  <img src={{ url_for('static', filename='/images/kampus (5).jpg') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.unesa.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (4).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.unsrat.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (3).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://polije.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (2).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                  <span>JATAYU 3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('aplikasi') }}">Application </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('team') }}">Our Team</a>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Tim Pengembang
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <img src="/static/images/galih.png" alt="">
+                <div class="team-content">
+                    <h3 class="post-title">GALIH SETYO PERMATA</h3>
+                    <span class="post">Frontend & Backend <br> AI Engineer Helper</span>
+                    <p class="description">
+                        Mahasiswa Universitas Negeri Surabaya
+                    </p>
+                    <ul class="team_social">
+                        <li><a href="https://www.linkedin.com/in/galih-setyo-742058235/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/g.alihkan/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/Galihsety0/"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="team-prof">
+                    <h3 class="post-title">GALIH SETYO PERMATA</h3>
+                    <span class="post">Frontend & Backend <br> AI Engineer Helper</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <img src="/static/images/steven.png" alt="">
+                <div class="team-content">
+                    <h3 class="post-title">STEVEN RICARDO UPA</h3>
+                    <span class="post">Fullstack Developer</span>
+                    <p class="description">
+                        Mahasiswa Universitas Sam Ratulangi
+                    </p>
+                    <ul class="team_social">
+                      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/rstvn__/"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="team-prof">
+                    <h3 class="post-title">STEVEN RICARDO UPA</h3>
+                    <span class="post">Full Stack Developer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <img src="/static/images/adel.png" alt="">
+                <div class="team-content">
+                    <h3 class="post-title">Adel Yahzunka</h3>
+                    <span class="post">Data Acquisition</span>
+                    <p class="description">
+                        Mahasiswa Politeknik Jember
+                    </p>
+                    <ul class="team_social">
+                      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="team-prof">
+                    <h3 class="post-title">Adel Yahzunka</h3>
+                    <span class="post">Data Acquisition</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <img src="/static/images/gorgina.png" alt="">
+                <div class="team-content">
+                    <h3 class="post-title">Georgina Romauli Pingkan Siagian</h3>
+                    <span class="post">AI Engineer</span>
+                    <p class="description">
+                        Mahasiswa Universitas Sam Ratulangi
+                    </p>
+                    <ul class="team_social">
+                      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="team-prof">
+                    <h3 class="post-title">Georgina Romauli Pingkan Siagian</h3>
+                    <span class="post">AI Engineer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+              <img src="/static/images/ayano.png" alt="">
+              <div class="team-content">
+                  <h3 class="post-title">Ayano Elisabeth Rumeen</h3>
+                  <span class="post">AI Engineer</span>
+                  <p class="description">
+                      Mahasiswa Universitas Sam Ratulangi
+                  </p>
+                  <ul class="team_social">
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                  </ul>
+              </div>
+              <div class="team-prof">
+                  <h3 class="post-title">Ayano Elisabeth Rumeen</h3>
+                  <span class="post">AI Engineer</span>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- end tim section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>
+            About Recyclegence
+          </h6>
+          <p>
+            Aplikasi pintar untuk membantu kamu dalam pemilahan dan pengklasifikasian sampah dengan mudah, Bersama kita bisa menciptakan dunia yang lebih hijau dan berkelanjutan.
+          </p>
+        </div>
+        <div class="col-md-2 offset-md-1"> 
+          <h6>
+            Menu
+          </h6>
+          <ul>
+            <li class="">
+              <a class="" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="{{ url_for('about') }}">About </a>
+            </li>
+            <li class="">
+              <a class="" href="{{ url_for('aplikasi') }}">Application </a>
+            </li>
+            <li class="active">
+              <a class="" href="{{ url_for('team') }}">Our Team</a>
+          </ul>
+        </div>
+        
+        <div class="col-md-3">
+          <h6>
+            Contact Us
+          </h6>
+          <div class="info_link-box">
+            <a href="">
+              <img src="/static/images/call-white.png" alt="">
+              <span>+62 878 8076 2086</span>
+            </a>
+            <a href="">
+              <img src="/static/images/mail-white.png" alt="">
+              <span> recyclegence_jatayu3@gmail.com</span>
+            </a>
+          </div>
+          <div class="info_social">
+            <div>
+              <a href="">
+                <img src="/static/images/facebook-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="/static/images/twitter-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="/static/images/linkedin.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/g.alihkan/">
+                <img src="/static/images/instagram.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div>
+        </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2023 All Rights Reserved. JATAYU 3
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  <script src={{ url_for('static', filename='/js/jquery-3.4.1.min.js') }} ></script>
+	<script src={{ url_for('static', filename='/js/bootstrap.js') }} ></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>

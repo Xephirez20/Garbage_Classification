@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Recyclegence | JATAYU 3</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+
+  <!-- JavaScript -->
+  <link href="/static/js/bootstrap.js" rel="stylesheet" />
+  <link href="/static/js/jquery-3.4.1.min.js" rel="stylesheet" />
+  <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+  <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+</head>
+
+<body class="sub_page aplikasi_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="">
+            <img src={{ url_for('static', filename='/images/logo.png') }} />
+            <span>
+              Recyclegence
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="https://kampusmerdeka.kemdikbud.go.id/">
+                  <img src={{ url_for('static', filename='/images/kampus (1).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://orbitfutureacademy.id">
+                  <img src={{ url_for('static', filename='/images/kampus (5).jpg') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.unesa.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (4).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.unsrat.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (3).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://polije.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (2).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                  <span>JATAYU 3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('aplikasi') }}">Application </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('team') }}">Our Team</a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- tutorial section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Cara Penggunaan
+        </h2>
+      </div>
+      <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="/static/images/tutor.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pilih Fitur
+                </h5>
+                <p>
+                  Gunakan salah satu fitur, kamu dapat menggungah gambar yang ingin dideteksi lalu kirim gambar atau dapat menggunakan kamera secara real time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="/static/images/tutor2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Prediksi Gambar
+                </h5>
+                <p>
+                  Sistem AI akan memprediksi dan tunggu hingga sistem selesai mendeteksi jenis sampah yang kamu upload.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="/static/images/tutor3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Hasil Deteksi
+                </h5>
+                <p>
+                  Hasil deteksi jenis sampah yang kamu upload akan muncul dan terdapat suggestion daur ulang untuk jenis sampah yang sudah kamu upload.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end tutorial section -->
+
+  <!-- app section -->
+  <!-- unggah gambar section -->
+  <section class="result_section">
+    <div class="work-area-2 section-padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            <br> FITUR
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Unggah gambar section -->
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 custom-grid">
+        <div class="work-wrap">
+          <div class="work-content" id="sideaupload">
+            <h2>Unggah Gambar</h2>
+            <p>
+              Unggah gambar sampah kamu untuk mengidentifikasi jenis sampahmu.
+              <br>
+              <br>
+            </p>
+            <a href="#" data-toggle="modal" data-target="#modalUpload">Mulai Sekarang</a>
+          </div>
+        </div>
+    </div>
+    
+    <!-- deteksi realtime section -->
+    <div class="col-lg-6 col-md-6 col-sm-6 custom-grid">
+      <div class="work-wrap">
+        <div class="work-content" id="sideadetect">
+          <h2>Deteksi Secara Realtime</h2>
+          <p>
+            Dengan menggunakan webcam/kamera eksternal, kamu dapat dengan langsung melakukan identifikasi jenis sampah kamu.
+          </p>
+          <a href="#" data-toggle="modal" data-target="#modalDeteksi">Mulai Sekarang</a>
+        </div>
+      </div>
+    </div>
+    
+        <!-- form Unggah gambar section -->
+        <div class="modal fade bd-example-modal-lg" id="modalUpload" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Form Unggah Gambar Prediksi
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="modal-body">
+                      <!-- Input atau Unggah Gambar dari Pengguna -->
+                      <form style="">
+                        <h3 style="padding-bottom: 20px;">
+                          Silahkan input Gambar
+                        </h3>
+                        <img src="/static/images/s-2.jpg" width="300"  style="padding-bottom: 20px;" ></img>
+                            <input type="file" id="input_gambar" name="file"> 
+                        <br>
+                        <!-- Tombol Prediksi -->
+                        <button type="submit" id="prediksi_submit" class="btn btn-default btn-lg">Prediksi</button>
+                      </form>
+                    </div>
+                  </div>
+                    <div class="col-sm-6">
+                      <h3 style="">
+                        Output
+                      </h3>
+                      <br>
+                      <!-- Bagian Halaman untuk Hasil Prediksi -->
+                      <div id="hasil_prediksi" style="padding-top: 2px;">
+                        <!-- Hasil Prediksi akan ditampilkan di sini-->
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END unggah gambar section -->
+        
+        <!-- JavaScript untuk Animasi Scroll dan Prediksi Model -->
+      	<script  src={{ url_for('static', filename='/js/client_side.js') }}></script>
+      
+      
+  </section>
+
+  <!-- end app section -->
+  
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2023 All Rights Reserved. JATAYU 3
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  <script src={{ url_for('static', filename='/js/jquery-3.4.1.min.js') }} ></script>
+	<script src={{ url_for('static', filename='/js/bootstrap.js') }} ></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>

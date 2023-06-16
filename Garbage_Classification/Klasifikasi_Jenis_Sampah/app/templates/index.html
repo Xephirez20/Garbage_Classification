@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Recyclegence | JATAYU 3</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+
+  <!-- JavaScript -->
+  <link href="/static/js/bootstrap.js" rel="stylesheet" />
+  <link href="/static/js/jquery-3.4.1.min.js" rel="stylesheet" />
+  <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+  <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+  <link rel="icon" href="/static/images/logo.png" type="image/png">
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="">
+            <img src={{ url_for('static', filename='/images/logo.png') }} />
+            <span>
+              Recyclegence
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="https://kampusmerdeka.kemdikbud.go.id/">
+                  <img src={{ url_for('static', filename='/images/kampus (1).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://orbitfutureacademy.id">
+                  <img src={{ url_for('static', filename='/images/kampus (5).jpg') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.unesa.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (4).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.unsrat.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (3).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://polije.ac.id">
+                  <img src={{ url_for('static', filename='/images/kampus (2).png') }} alt="" />
+                </a>
+              </li>
+              <li class="nav-item">
+                  <span>JATAYU 3</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('aplikasi') }}">Application </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('team') }}">Our Team</a>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="slider_container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-7 offset-md-6 offset-md-5">
+                    <div class="detail-box">
+                      <h2>
+                        Hai, selamat datang di...
+                      </h2>
+                      <h1>
+                        Recyclegence
+                      </h1>
+                      <p>
+                        Aplikasi pintar untuk membantu kamu dalam pemilahan dan pengklasifikasian sampah dengan mudah, Bersama kita bisa menciptakan dunia yang lebih hijau dan berkelanjutan.
+                      </p>
+                      <div class="btn-box">
+                        <a href="{{ url_for('about') }}" class="btn-1">
+                          Lebih lanjut..
+                        </a>
+                        <a href="{{ url_for('aplikasi') }}" class="btn-2">
+                          Yuk Mulai!
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-7 offset-md-6 offset-md-5">
+                    <div class="detail-box">
+                      <h2>
+                        Hai, selamat datang!
+                      </h2>
+                      <h1>
+                        Recyclegence
+                      </h1>
+                      <p>
+                        Dengan kecerdasan buatan, Recyclegence berupaya untuk mentransformasi cara kita melihat dan melaksanakan daur ulang. 
+                        Recyclegence menekankan pada inovasi, efisiensi, dan efektivitas dalam proses pemilahan & mengklasifikasikan sampah untuk dapat didaur ulang guna mencapai dunia yang lebih berkelanjutan.
+                      </p>
+                      <div class="btn-box">
+                        <a href="{{ url_for('about') }}" class="btn-1">
+                          Lebih Lanjut..
+                        </a>
+                        <a href="{{ url_for('aplikasi') }}" class="btn-2">
+                          Yuk Mulai!
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-7 offset-md-6 offset-md-5">
+                    <div class="detail-box">
+                      <h2>
+                        Hai, selamat datang!
+                      </h2>
+                      <h1>
+                        Recyclegence
+                      </h1>
+                      <p>
+                        Dengan memanfaatkan teknologi cerdas, Recyclegence berupaya untuk mentransformasi cara kita melihat dan melaksanakan daur ulang. Filosofi ini menekankan pada inovasi, efisiensi, dan efektivitas dalam proses daur ulang untuk mencapai dunia yang lebih berkelanjutan.
+                      </p>
+                      <div class="btn-box">
+                        <a href="{{ url_for('about') }}" class="btn-1">
+                          Lebih Lanjut..
+                        </a>
+                        <a href="{{ url_for('aplikasi') }}" class="btn-2">
+                          Yuk Mulai!
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+    <!-- tutorial section -->
+
+    <section class="client_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Cara Penggunaan
+          </h2>
+        </div>
+        <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
+            <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="box">
+                <div class="img-box">
+                  <img src="/static/images/tutor.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Efisiensi
+                  </h5>
+                  <p>
+                    Recyclegence dapat meningkatkan efisiensi dalam proses pemilahan sampah. Model AI dapat secara akurat mengidentifikasi jenis sampah yang berbeda dengan cepat dan akurat, mengurangi ketergantungan pada pemilahan manual yang memakan waktu dan tenaga.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="/static/images/tutor2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Skalabilitas dan Fleksibilitas
+                  </h5>
+                  <p>
+                    Recyclegence dapat dikembangkan dan diterapkan dalam berbagai skala, mulai dari tingkat rumah tangga hingga sistem pengelolaan sampah skala kota.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="/static/images/tutor3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Akurasi yang Tinggi
+                  </h5>
+                  <p>
+                    Dengan menggunakan model Convolutional Neural Network (CNN) yang telah dilatih secara akurat, Recyclegence dapat memberikan hasil klasifikasi sampah dengan tingkat akurasi yang tinggi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  
+    <!-- end tutorial section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Suggestion
+        </h2>
+      </div>
+      <div class="service_container">
+        <div class="box">
+          <img src="/static/images/s-1.jpg" alt="">
+          <h6 class="visible_heading">
+            Sampah? Ada apa saja?
+          </h6>
+          <div class="link_box">
+            <a href="https://waste4change.com/blog/sampah-pengertian-jenis-hingga-peraturannya-di-indonesia/">
+              <img src="/static/images/link.png" alt="">
+            </a>
+            <h6>
+              Yuk Lihat! <br> Sampah? Ada apa saja?
+            </h6>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/static/images/s-2.jpg" alt="">
+          <h6 class="visible_heading">
+            Daur Ulang Sampah Botol Platik
+          </h6>
+          <div class="link_box">
+            <a href="">
+              <img src="/static/images/link.png" alt="">
+            </a>
+            <h6>
+              Yuk Lihat! <br> Daur Ulang Sampah Botol Platik
+            </h6>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/static/images/s-3.jpg" alt="">
+          <h6 class="visible_heading">
+            Daur Ulang Sampah Paper
+          </h6>
+          <div class="link_box">
+            <a href="">
+              <img src="/static/images/link.png" alt="">
+            </a>
+            <h6>
+              Yuk Lihat! <br> Daur Ulang Sampah Paper
+            </h6>
+          </div>
+        </div>
+        <div class="box">
+          <img src="/static/images/s-2.jpg" alt="">
+          <h6 class="visible_heading">
+            Daur Ulang Sampah Kaca
+          </h6>
+          <div class="link_box">
+            <a href="">
+              <img src="/static/images/link.png" alt="">
+            </a>
+            <h6>
+              Yuk Lihat! <br> Daur Ulang Sampah Kaca
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- app section -->
+
+  <section class="result_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="/static/images/app.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="detail-box">
+            <h2>
+              RECYCLEGENCE
+            </h2>
+            <p>
+              Dengan satu langkah kecil, kamu dapat berkontribusi pada upaya daur ulang dan membantu menjaga lingkungan kita tetap bersih. 
+              Ayo, coba sekarang dan jadilah agen perubahan dalam perjuangan untuk keberlanjutan!
+            </p>
+            <a href="{{ url_for('aplikasi') }}">
+              Mulai!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end app section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>
+            About Recyclegence
+          </h6>
+          <p>
+            Aplikasi pintar untuk membantu kamu dalam pemilahan dan pengklasifikasian sampah dengan mudah, Bersama kita bisa menciptakan dunia yang lebih hijau dan berkelanjutan.
+          </p>
+        </div>
+        <div class="col-md-2 offset-md-1"> 
+          <h6>
+            Menu
+          </h6>
+          <ul>
+            <li class=" active">
+              <a class="" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="{{ url_for('about') }}">About </a>
+            </li>
+            <li class="">
+              <a class="" href="{{ url_for('aplikasi') }}">Application </a>
+            </li>
+            <li class="">
+              <a class="" href="{{ url_for('team') }}">Our Team</a>
+          </ul>
+        </div>
+        
+        <div class="col-md-3">
+          <h6>
+            Contact Us
+          </h6>
+          <div class="info_link-box">
+            <a href="">
+              <img src="/static/images/call-white.png" alt="">
+              <span>+62 878 8076 2086</span>
+            </a>
+            <a href="">
+              <img src="/static/images/mail-white.png" alt="">
+              <span> recyclegence_jatayu3@gmail.com</span>
+            </a>
+          </div>
+          <div class="info_social">
+            <div>
+              <a href="">
+                <img src="/static/images/facebook-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="/static/images/twitter-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="/static/images/linkedin.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/g.alihkan/">
+                <img src="/static/images/instagram.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div>
+        </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; 2023 All Rights Reserved. JATAYU 3
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  <script src={{ url_for('static', filename='/js/jquery-3.4.1.min.js') }} ></script>
+	<script src={{ url_for('static', filename='/js/bootstrap.js') }} ></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>
